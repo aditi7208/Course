@@ -1,0 +1,49 @@
+<p>data-binding works!</p>
+<div class="row">
+    <div class="col-4">
+        on my way from .ts to .html
+    </div>
+     <div class="col-4">
+        
+    </div>
+     <div class="col-4">
+        
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        Interpolation
+        <div class="row">
+            <div class="col-4 bg-success">
+               <h4>  {{courseName}} </h4>
+               <div>{{inputType}}</div>
+               <input type="text" value="{{courseName}}" placeholder="Enter Name"/>
+               <input type="{{inputType}}" />
+            </div>
+            <div class="col-4 bg-success">
+                Property Binding
+                <div [class]="myClassName">Danger</div>
+                <input type="text" [value]="courseName"/>
+                <input [type]="inputType" />
+            </div>
+             <div class="col-4">
+                 <button (click)="showAlert('this is from span')">Show Welcome</button>
+                    <button (click)="changeCourseName()">Change Name</button>
+            </div>
+        </div>
+    </div>
+     <div class="col-6">
+        <input type="text" [(ngModel)]="courseName"/>
+        <select [(ngModel)]="stateName">
+            <option value="">Select</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Goa">Goa</option>
+            <option value="Punjab">Punjab</option>
+        </select>
+    </div>
+     <div class="col-6">
+        <h2>Signals...!!</h2>
+        <h2>{{firstName()}}</h2>
+    </div>
+</div>

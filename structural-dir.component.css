@@ -1,0 +1,97 @@
+/* ===== Header Styles ===== */
+.c1 { background-color: #4b5563; /* dark gray */
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/* ===== Div Colors ===== */
+h4{
+    text-align: center;
+    padding: 50px;
+}
+.col-3:nth-child(1)
+.p-3 {background-color: #ef4444; /* red */
+      color: white;
+    width: 150px;
+    height: 150px;
+    display: inline-flex;
+    text-align: center;
+}
+
+.col-3:nth-child(2) 
+.p-3 {background-color: #059669; /* green */
+     color: white;
+     width: 150px;
+    height: 150px;
+     display: inline-flex;text-align: center;
+    
+}
+
+.col-3:nth-child(3) 
+.p-3 {background-color: #6b7280; /* gray */
+    color: white;
+    width: 150px;
+    height: 150px;
+     display: inline-flex;text-align: center;
+     
+}
+    
+.col-3:nth-child(4) 
+.p-3 {background-color: #3b82f6; /* blue */
+    color: white;
+    width: 150px;
+    height: 150px;
+    display: inline-flex;
+text-align: center;}
+/* ===== Button Styling ===== */
+.btn {margin: 5px;
+    padding: 8px 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;}
+.btn:nth-child(1) {
+    background-color: #ef4444; /* Hide - red */
+}
+.btn:nth-child(2) 
+{
+    background-color: #3b82f6; /* Show - blue */
+}
+.btn:nth-child(3) 
+{
+    background-color: #059669; /* Toggle - green */
+}
+/* ===== Inputs & Select Styling ===== */
+input[type="text"],select {height: 32px;
+    padding: 0 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;}
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+.width-50 {
+    width: 45%;
+}
+/* ===== Flex Layout for 2nd Row Inputs ===== */
+.col-3 > div {
+    display: flex;
+    align-items: center;
+}
+/* ===== Optional: Full-width responsiveness ===== */
+@media screen and (max-width: 768px) {
+.col-3 {flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 10px; }
+.width-50 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.btn {width: 100%;
+}}
